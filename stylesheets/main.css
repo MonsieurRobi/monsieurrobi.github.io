@@ -7,8 +7,36 @@ body {
 }
 
 .pitch {
-  margin-left: 60%;
+  margin-left: 50%;
   margin-right: 20%;
   margin-top: 20%;
   margin-bottom: 20%;
 }
+
+h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 1;
+  text-align: left;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0 0 30px;
+  text-align: left;
+}
+
+p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
