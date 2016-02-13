@@ -72,3 +72,16 @@ input[type=submit] {
     border-radius: 5px; 
     font-weight: bold;
 }
+
+#map {
+  height: 580px;
+}
+
+.leaflet-popup-content {
+  color: black;
+}
+
+.leaflet-popup-content img {
+  float: left;
+  margin: 10px;
+}
