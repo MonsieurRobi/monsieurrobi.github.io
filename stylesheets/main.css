@@ -73,6 +73,9 @@ input[type=submit] {
     font-weight: bold;
 }
 
+section {
+  margin: 40px;
+}
 #map {
   height: 580px;
 }
