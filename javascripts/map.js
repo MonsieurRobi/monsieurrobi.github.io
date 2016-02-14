@@ -1,6 +1,7 @@
 var events = [
   { "host": 'Fred', "when":"Date à préciser", where: "L'Ile-Saint-Denis (93)", "latitude": 48.90385, longitude: 2.34122},
   { "host": 'Dominique', "when":"Date à préciser", where: 'Paris', "latitude": 48.85888, "longitude": 2.34694},
+  { "host": 'Karine', "when":"30/04/2016", where: "Bergerac", "latitude": 44.85198, longitude: "0.48826"},
   { "host": 'Karina', "when": "12/05/2016", where: 'Montreuil, 93', "latitude": 48.8623357, "longitude": 2.4412184 },
   { "host": 'Vincent', "when": "04/06/2016", where: 'Limours, 91', "latitude": 48.6455882, "longitude": 2.075826 },
   { "host": 'Gaelle', "when": "05/06/2016", where: 'Lagny sur Marne, 77', "latitude": 48.8735584, "longitude": 2.7121663 },
