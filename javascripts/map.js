@@ -10,10 +10,18 @@ var events = [
   { "host": 'Julie', "when": "28/05/2016", where: 'Avignon', "latitude": 43.94172, "longitude":4.83339},
   { "host": 'Les Sidebottom', "when": "02/07/2016", where: 'Warrington, England', "latitude": 53.40170, "longitude":-2.56155},
 ];
-var map = L.map('map').setView([46.603354,1.8883335],5);
 var accessToken = "pk.eyJ1Ijoia3JpY2h0b2YiLCJhIjoiYjU1MTg4MWU5ZDRkNWVkOGRlZjUzZWFjNWYyMWI5YzcifQ.57puNCxCdXweviIgoWBG4Q";
+var origin = [46.603354,1.8883335];
+var initialZoom = 5;
+
+var map = L.map('map', {
+  center: origin,
+  zoom: initialZoom,
+  touchZoom: false,
+  scrollWheelZoom: false
+});
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>, made with love (not too much) by <a href="http://christophe.robillard.pro">Christophe Robillard</a>',
     maxZoom: 18,
     id: 'krichtof.4dbe142b',
     accessToken: accessToken
@@ -24,3 +32,13 @@ for (var i in events) {
   L.marker([event.latitude, event.longitude]).addTo(map)
     .bindPopup(event.when + ': chez ' + event.host + '<br>' + event.where);
 }
+
+var info = L.control({position: 'topleft'});
+info.onAdd = function(map) {
+  this._div = L.DomUtil.create('div', 'info');
+  this._div.innerHTML = '<h1>La tournée dans vos salons</h1>';
+  this._div.innerHTML += "<p>Alors, evidemment, la question que tout le monde se pose en regardant cette carte, c'est à quand Monsieur Robi dans ton salon ?</p>"
+  return this._div;
+};
+
+info.addTo(map);

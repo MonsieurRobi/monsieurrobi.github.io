@@ -77,9 +77,12 @@ section {
   margin: 40px;
 }
 #map {
-  height: 580px;
+  height: 620px;
 }
 
+.info {
+  width: 30%;
+}
 .leaflet-popup-content {
   color: black;
 }
