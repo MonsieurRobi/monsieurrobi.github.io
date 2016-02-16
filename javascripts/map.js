@@ -13,7 +13,7 @@ var events = [
 
 ];
 var accessToken = "pk.eyJ1Ijoia3JpY2h0b2YiLCJhIjoiYjU1MTg4MWU5ZDRkNWVkOGRlZjUzZWFjNWYyMWI5YzcifQ.57puNCxCdXweviIgoWBG4Q";
-var origin = [48.603354,-5.8883335];
+var origin = [49.603354,-5.8883335];
 var initialZoom = 6;
 
 var map = L.map('map', {
