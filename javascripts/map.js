@@ -40,6 +40,7 @@ info.onAdd = function(map) {
   this._div = L.DomUtil.create('div', 'info');
   this._div.innerHTML = '<h1>La tournée dans vos salons</h1>';
   this._div.innerHTML += "<p>Alors, evidemment, la question que tout le monde se pose en regardant cette carte, c'est à quand Monsieur Robi dans votre salon ?</p>"
+  this._div.innerHTML += L.DomUtil.get("mc_embed_signup").innerHTML;
   return this._div;
 };
 
