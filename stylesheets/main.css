@@ -9,7 +9,7 @@ body {
 .pitch {
   margin-left: 50%;
   margin-right: 20%;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 20%;
 }
 
@@ -35,7 +35,7 @@ p {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 24px;
+  margin-bottom: 50px;
   text-align: justify;
   text-justify: inter-word;
 }
