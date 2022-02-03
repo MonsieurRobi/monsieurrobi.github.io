@@ -73,9 +73,18 @@ input[type=email]:focus {
     font-weight: bold;
 }
 
+aside {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
 section {
   margin: 40px;
 }
+
+
 #map {
   height: 860px;
 }
