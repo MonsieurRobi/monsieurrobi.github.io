@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+  <p>{{ site.description }}</p>
+
+  {% assign next_balades = site.posts | where_exp:"balade", "balade.date  >= site.time" %}
+  {% assign previous_balades = site.posts | where_exp:"balade", "balade.date < site.time" %}
+
+  <h1 class="page-heading">Prochaines balades</h1>
+
+  <ul class="post-list">
+    {% for post in next_balades %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">Balades passées</h1>
+  <ul class="post-list">
+    {% for post in previous_balades %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
