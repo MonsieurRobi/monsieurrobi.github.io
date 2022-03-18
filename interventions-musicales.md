@@ -1,18 +1,14 @@
 ---
 layout: page
 title: Interventions scolaires
+image: sombrero-paul-bert.png
+subtitle: Interventions scolaires
 permalink: /ecole/
+show_in_menu: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Monsieur Robi intervient régulièrement en milieu scolaire. Il propose principalement :
+- des ateliers d'initiation au chant et à la pratique musicale
+- des ateliers où les élèves créent avec lui des chansons
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Envie d'une intervention dans votre école ? Contactez-le par mail à [bonjour@monsieurrobi.com](mailto:monsieurrobi.com)
