@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign proposition = site.data.propositions[page.proposition] %}
+{% assign proposition = site.data.propositions[layout.propale] %}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -10,15 +10,26 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ proposition.description }}
+   {{ proposition.description | markdownify }}
+  </div>
+
+  <div class="post-content" itemprop="articleBody">
+    <strong><a href="{{ proposition.url }}">Plus d'infos (videos, sons, ...)</a></strong>
   </div>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <h2>Infos pratiques
+  <h2>Infos pratiques</h2>
   <div class="post-content" itemprop="articleBody">
+    <p><strong>{{ page.date | date: "%-d %b %Y"}} à {{ page.hour }}</strong></p>
+    <p>{{ page.price }}</p>
     {{ page.venue }}
+    <br>
+    {{ page.address }}
+    <br>
+    {{ page.city }}
   </div>
+
 </article>

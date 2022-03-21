@@ -4,8 +4,9 @@
   {% include head.html %}
 
   <body>
+    {% assign propale = site.data.propositions[layout.propale] %}
 
-    {% include header.html %}
+    {% include header.html cover=propale.image %}
 
     <div class="page-content">
       <div class="wrapper">

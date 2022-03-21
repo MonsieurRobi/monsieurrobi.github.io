@@ -1,16 +1,22 @@
-- olympia:
+olympia:
   title: "Monsieur Robi prépare son Olympia"
   url: "/olympia"
   description: "Bim bam boum"
   image: "robi_back.jpg"
   description: "Dans sa quête de célébrité, Monsieur Robi prépare son Olympia 2027. Mais il se heurte à un souci de taille : il n'a qu'une chanson à son répertoire... Il sillonne alors les routes de France pour préparer son spectacle avec vous. Alors, envie de participer à cette expérience inédite ? Envie de changer, de s'marrer, et même de créer ? Ce spectacle musical improvisé est décidémment à ne pas manquer !"
 
-- piano-kismar:
+piano-kismar:
   title: "Piano Kismar"
   url: "/piano-kismar"
-  image: "table_kismarjpg"
+  image: "table_kismar.jpg"
+  description: "Envie de chanter autour d'un piano tout plein de chansons qui mettent du baume en coêur ? Monsieur Robi ramène son piano, amenez votre bonne humeur et c'est parti pour chanter, boire et s'marrer !"
 
-- ecole:
+ecole:
   title: "Interventions scolaires"
   url: "/ecole"
   image: "sombrero-paul-bert.png"
+  description: >
+    Monsieur Robi intervient régulièrement en milieu scolaire. Il propose principalement :
+      - des ateliers d'initiation au chant et à la pratique musicale
+      - des ateliers où les élèves créent avec lui des chansons
+

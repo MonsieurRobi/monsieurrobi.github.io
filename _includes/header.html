@@ -14,15 +14,13 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.data.propositions %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% for entry in site.data.toc %}
+          {% assign proposition = site.data.propositions[entry.proposition] %}
+          <a class="page-link" href="{{ proposition.url | prepend: site.baseurl }}">{{ proposition.title }}</a>
         {% endfor %}
       </div>
     </nav>
   <div>
-    <img src="/assets/{{ page.image | default: 'robi_back.jpg' }}">
+    <img src="/assets/{{ include.cover | default: 'robi_back.jpg' }}">
   </div>
-
-  </div>
-
 </header>
