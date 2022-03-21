@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Monsieur Robi prépare son Olympia
-image: "robi_back.jpg"
+propale: olympia
 subtitle: Monsieur Robi prépare son Olympia... avec vous !
 permalink: /olympia/
 show_in_menu: true

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Piano Kismar
-image: 'table_kismar.jpg'
+propale: piano-kismar
 subtitle: On chante, on boit, on s'marre, au Piano Kismar
 permalink: /piano-kismar/
 show_in_menu: true

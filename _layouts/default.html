@@ -4,7 +4,8 @@
   {% include head.html %}
 
   <body>
-    {% assign propale = site.data.propositions[layout.propale] %}
+    {% assign proposition = layout.propale | default: page.propale %}
+    {% assign propale = site.data.propositions[proposition] %}
 
     {% include header.html cover=propale.image %}
 

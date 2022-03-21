@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interventions scolaires
-image: sombrero-paul-bert.png
+propale: ecole
 subtitle: Interventions scolaires
 permalink: /ecole/
 show_in_menu: true
