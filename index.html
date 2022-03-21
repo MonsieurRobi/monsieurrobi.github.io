@@ -5,15 +5,15 @@ layout: default
 <div class="home">
   <p>{{ site.description }}</p>
 
-  {% assign next_balades = site.posts | where_exp:"balade", "balade.date  >= site.time" %}
-  {% assign previous_balades = site.posts | where_exp:"balade", "balade.date < site.time" %}
+  {% assign next_events = site.posts | where_exp:"event", "event.date  >= site.time" %}
+  {% assign previous_events = site.posts | where_exp:"event", "event.date < site.time" %}
 
   <h1 class="page-heading">Prochaines dates</h1>
 
   <ul class="post-list">
-    {% for post in next_balades %}
+    {% for post in next_events %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
+        <span class="">{{ post.date | date: "%-d %b %Y" }} à {{ post.city }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -24,9 +24,9 @@ layout: default
 
   <h1 class="page-heading">Dates passées</h1>
   <ul class="post-list">
-    {% for post in previous_balades %}
+    {% for post in previous_events %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
+        <span class="">{{ post.date | date: "%-d %b %Y" }} à {{ post.city }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
