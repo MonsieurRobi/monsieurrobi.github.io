@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign proposition = site.data.propositions[page.proposition] %}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -9,7 +10,15 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {{ proposition.description }}
+  </div>
+
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
+  <h2>Infos pratiques
+  <div class="post-content" itemprop="articleBody">
+    {{ page.venue }}
+  </div>
 </article>

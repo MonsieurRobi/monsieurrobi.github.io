@@ -1,0 +1,12 @@
+- olympia:
+  title: "Monsieur Robi prépare son Olympia"
+  url: "/olympia"
+  description: "Bim bam boum"
+
+- piano-kismar:
+  title: "Piano Kismar"
+  url: "/piano-kismar"
+
+- ecole:
+  title: "Interventions scolaires"
+  url: "/ecole"
