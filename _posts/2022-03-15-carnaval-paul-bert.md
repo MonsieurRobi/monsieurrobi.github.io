@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: proposition-ecole
 title: Monsieur Robi au carnaval des Super Héros
-image: sombrero-paul-bert.png
 city: Meaux (Seine-et-Marne)
 venue: Ecole maternelle Paul Bert
 price: Gratuit
