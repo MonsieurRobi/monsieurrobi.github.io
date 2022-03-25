@@ -6,7 +6,7 @@ subtitle: Monsieur Robi prépare son Olympia... avec vous !
 permalink: /olympia/
 show_in_menu: true
 ---
-Dans sa quête de célébrité, Monsieur Robi prépare son Olympia 2020. Mais il se heurte à un souci de taille : il n'a qu'une chanson à son répertoire... Il sillonne alors les routes de France pour préparer son spectacle avec vous. Alors, envie de participer à cette expérience inédite ? Envie de changer, de s'marrer, et même de créer ? Ce spectacle musical improvisé est décidémment à ne pas manquer !
+Dans sa quête de célébrité, Monsieur Robi prépare son Olympia 2027. Mais il se heurte à un souci de taille : il n'a qu'une chanson à son répertoire... Il sillonne alors les routes de France pour préparer son spectacle avec vous. Alors, envie de participer à cette expérience inédite ? Envie de changer, de s'marrer, et même de créer ? Ce spectacle musical improvisé est décidémment à ne pas manquer !
 
 ## C'est quoi le style de musique ?
 
