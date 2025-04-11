@@ -16,7 +16,8 @@ C'est une musique que Michel Drucker programme, cela va forcément vous plaire !
 
 ## "Ce n'est pas une référence pour moi Michel Drucker"
 
-C'est un concours de circonstance qui a amené Monsieur Robi sur le plateau de Vivement Dimanche.
+C'est un concours de circonstance qui a amené Monsieur Robi sur le plateau de Vivement Dimanche (à noter que [Monsieur Robi a pris ses distances avec Jean-Luc Mélenchon](https://blogs.mediapart.fr/krichtof2/blog/071024/bon-vent-jean-luc).
+
 Voici d'autres chansons extraites de son album _Pommes de terre_
 
 <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/6794746&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/monsieurrobi" title="Monsieur Robi" target="_blank" style="color: #cccccc; text-decoration: none;">Monsieur Robi</a> · <a href="https://soundcloud.com/monsieurrobi/sets/pommes-de-terre" title="Pommes de terre" target="_blank" style="color: #cccccc; text-decoration: none;">Pommes de terre</a></div>
