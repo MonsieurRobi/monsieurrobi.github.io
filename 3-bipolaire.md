@@ -2,6 +2,7 @@
 layout: page
 title: Tout le monde n'a pas la chance d'être bipolaire
 propale: conf
+image_down: true
 subtitle: Tout le monde n'a pas la chance d'être bipolaire
 permalink: /bipolaire
 show_in_menu: true

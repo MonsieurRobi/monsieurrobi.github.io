@@ -21,6 +21,8 @@
       </div>
     </nav>
   <div>
-    <img src="/assets/{{ include.cover | default: 'robi_back.jpg' }}">
+    {% if page.image_down != true %}
+      <img src="/assets/{{ include.cover | default: 'robi_back.jpg' }}">
+    {% endif %}
   </div>
 </header>
