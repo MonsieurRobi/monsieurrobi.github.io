@@ -12,11 +12,9 @@
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
-        {% if page.image_down == true %}
         <div>
           <img src="/assets/{{ propale.image | default: 'robi_back.jpg' }}">
         </div>
-        {% endif %}
       </div>
     </div>
 
