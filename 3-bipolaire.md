@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Tout le monde n'a pas la chance d'être bipolaire
+layout: proposition
+title: "Tout le monde n'a pas la chance d'être bipolaire"
 propale: conf
 image_down: true
 subtitle: Tout le monde n'a pas la chance d'être bipolaire

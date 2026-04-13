@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.subtitle }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+
+{% assign events = site.posts | where_exp: "event", "event.propale == page.propale" %}
+
+<ul class="post-list">
+  {% for event in events %}
+  <li>
+    <span class="">{{ event.date | date: "%-d %b %Y" }} à {{ event.venue }}, {{ event.city }}
+      {% if event.address %} ({{ event.address }}) {% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
