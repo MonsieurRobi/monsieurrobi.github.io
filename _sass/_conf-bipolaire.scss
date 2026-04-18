@@ -2,12 +2,17 @@
 // Toutes les règles sont scopées sous .conf-bipolaire.
 // Les couleurs et fontes viennent des CSS custom properties injectées
 // depuis propositions.yml via head.html.
+//
+// Convention tailles :
+//   - em  → texte contenu (scale avec la base 20px du composant)
+//   - rem → titres display uniquement (clamp viewport-aware)
+//   - px  → labels UI figés (conf-label)
 
 .conf-bipolaire {
   background-color: var(--color-bg-primary);
   color: var(--color-text-secondary);
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.65;
 
   p { margin-bottom: 0; }
@@ -50,11 +55,11 @@
 
 
 // -----------------------------------------------
-// Label sépia (uppercase, small caps)
+// Label sépia (uppercase, figé à 11px volontairement)
 // -----------------------------------------------
 .conf-label {
   font-family: var(--font-sans);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -89,6 +94,7 @@
   }
 }
 
+// rem intentionnel : taille display ancrée viewport
 .conf-title {
   font-family: var(--font-serif);
   font-size: clamp(1.9rem, 5vw, 3rem);
@@ -107,7 +113,7 @@
 }
 
 .conf-pitch {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: var(--color-text-secondary);
   max-width: 580px;
   margin-bottom: 36px;
@@ -135,7 +141,7 @@
 .conf-btn {
   display: inline-block;
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 600;
   padding: 12px 24px;
   border-radius: 4px;
@@ -159,7 +165,7 @@
 
 .conf-link--arrow {
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: var(--color-text-secondary);
   text-decoration: underline;
   text-decoration-color: var(--color-accent-soft);
@@ -172,7 +178,7 @@
 
 .conf-link--underline {
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: var(--color-accent-strong);
   text-decoration: underline;
   text-decoration-color: var(--color-accent-strong);
@@ -197,7 +203,7 @@
   margin-bottom: 24px;
   color: var(--color-border-soft);
   font-family: var(--font-sans);
-  font-size: 0.875rem;
+  font-size: 0.85em;
 }
 
 .conf-video {
@@ -242,7 +248,7 @@
 
 .conf-caption {
   font-style: italic;
-  font-size: 0.875rem;
+  font-size: 0.85em;
   color: var(--color-text-muted);
 }
 
@@ -255,11 +261,10 @@
   padding-left: 24px;
   margin: 0 0 24px;
   color: inherit;
-  font-size: 1rem;
-  letter-spacing: 0;
 
   p {
     font-style: italic;
+    font-size: 1em;
     color: var(--color-text-secondary);
     margin-bottom: 10px;
   }
@@ -267,7 +272,7 @@
 
 .conf-quote__attr {
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.85em;
   color: var(--color-text-muted);
   font-style: normal;
 
@@ -306,13 +311,13 @@
 .conf-date-item__day {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.05em;
   color: var(--color-text-primary);
 }
 
 .conf-date-item__year {
   font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-size: 0.8em;
   color: var(--color-text-muted);
 }
 
@@ -329,7 +334,7 @@
 
   span {
     font-family: var(--font-sans);
-    font-size: 0.875rem;
+    font-size: 0.875em;
     color: var(--color-text-muted);
   }
 }
@@ -344,7 +349,7 @@
 
   span {
     font-family: var(--font-sans);
-    font-size: 0.875rem;
+    font-size: 0.875em;
     color: var(--color-text-muted);
   }
 }
@@ -353,6 +358,8 @@
 // -----------------------------------------------
 // Accueillir (hosting)
 // -----------------------------------------------
+
+// rem intentionnel : titres display ancrés viewport
 .conf-heading {
   font-family: var(--font-serif);
   font-size: clamp(1.4rem, 3vw, 1.9rem);
@@ -364,12 +371,12 @@
 }
 
 .conf-heading--sm {
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 
 .conf-subheading {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-style: italic;
   font-weight: 600;
   color: var(--color-text-primary);
@@ -407,7 +414,7 @@
 
   th {
     font-family: var(--font-sans);
-    font-size: 0.8rem;
+    font-size: 0.8em;
     font-weight: 600;
     color: var(--color-text-muted);
     width: 110px;
@@ -417,7 +424,7 @@
 
   td {
     color: var(--color-text-primary);
-    font-size: 0.95rem;
+    font-size: 0.95em;
   }
 }
 
@@ -437,14 +444,14 @@
   strong {
     display: block;
     font-family: var(--font-sans);
-    font-size: 0.875rem;
+    font-size: 0.875em;
     font-weight: 600;
     margin-bottom: 6px;
   }
 
   p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.95em;
     color: var(--color-text-secondary);
   }
 
@@ -466,7 +473,7 @@
 
 .conf-pricing__conclusion {
   color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-size: 0.95em;
   margin-top: 4px;
 }
 
@@ -483,7 +490,7 @@
   p {
     color: var(--color-border-soft);
     margin-bottom: 28px;
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
