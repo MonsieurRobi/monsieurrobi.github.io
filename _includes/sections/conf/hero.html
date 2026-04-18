@@ -1,34 +1,43 @@
 <section class="conf-section conf-hero">
-  <svg class="conf-hero__deco" width="120" height="70" viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M8,58 Q30,10 65,35 Q90,52 108,22" stroke="var(--color-accent-soft)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-    <path d="M102,18 L108,22 L103,28" stroke="var(--color-accent-soft)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  </svg>
-
   <div class="conf-inner">
-    <p class="conf-label">{{ propale.format_label }}</p>
+    <div class="conf-hero__layout">
 
-    <h1 class="conf-title">
-      {% assign title_parts = propale.full_title | split: propale.highlight_word %}
-      {% if title_parts.size == 2 %}
-        {{ title_parts[0] }}<span class="conf-title__highlight">{{ propale.highlight_word }}</span>{{ title_parts[1] }}
-      {% else %}
-        {{ propale.full_title }}
-      {% endif %}
-    </h1>
+      <div class="conf-hero__text">
+        <p class="conf-label">{{ propale.format_label }}</p>
 
-    <p class="conf-pitch">
-      {% assign pitch = propale.pitch | strip %}
-      {% assign pitch_parts = pitch | split: propale.pitch_highlight %}
-      {% if pitch_parts.size == 2 %}
-        {{ pitch_parts[0] }}<mark class="conf-mark">{{ propale.pitch_highlight }}</mark>{{ pitch_parts[1] }}
-      {% else %}
-        {{ pitch }}
-      {% endif %}
-    </p>
+        <h1 class="conf-title">
+          {% assign title_parts = propale.full_title | split: propale.highlight_word %}
+          {% if title_parts.size == 2 %}
+            {{ title_parts[0] }}<span class="conf-title__highlight">{{ propale.highlight_word }}</span>{{ title_parts[1] }}
+          {% else %}
+            {{ propale.full_title }}
+          {% endif %}
+        </h1>
 
-    <div class="conf-hero__actions">
-      <a href="#accueillir" class="conf-btn conf-btn--primary">Accueillir cette conférence</a>
-      <a href="#dates" class="conf-link--arrow">Voir les prochaines dates</a>
+        <p class="conf-pitch">
+          {% assign pitch = propale.pitch | strip %}
+          {% assign pitch_parts = pitch | split: propale.pitch_highlight %}
+          {% if pitch_parts.size == 2 %}
+            {{ pitch_parts[0] }}<mark class="conf-mark">{{ propale.pitch_highlight }}</mark>{{ pitch_parts[1] }}
+          {% else %}
+            {{ pitch }}
+          {% endif %}
+        </p>
+
+        <div class="conf-hero__actions">
+          <a href="#accueillir" class="conf-btn conf-btn--primary">Accueillir cette conférence</a>
+          <a href="#dates" class="conf-link--arrow">Voir les prochaines dates</a>
+        </div>
+      </div>
+
+      <div class="conf-hero__portrait">
+        <svg class="conf-hero__deco" width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8,50 Q28,8 58,28 Q76,42 90,18" stroke="var(--color-accent-soft)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M84,14 L90,18 L85,24" stroke="var(--color-accent-soft)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <img src="/assets/{{ propale.image }}" alt="{{ propale.full_title }}">
+      </div>
+
     </div>
   </div>
 </section>

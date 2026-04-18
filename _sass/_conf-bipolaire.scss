@@ -82,10 +82,41 @@
   }
 }
 
+.conf-hero__layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 56px;
+  align-items: start;
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr 280px;
+    gap: 40px;
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.conf-hero__portrait {
+  position: relative;
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  @include media-query($on-palm) {
+    max-width: 260px;
+  }
+}
+
 .conf-hero__deco {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: -20px;
+  right: -16px;
   pointer-events: none;
   opacity: 0.9;
 
