@@ -1,0 +1,277 @@
+// === Home page ===
+// Palette neutre chaude. Crimson Pro pour les titres.
+
+$home-bg:          #F8F6F2;
+$home-bg-card:     #FFFFFF;
+$home-text:        #2A2520;
+$home-text-muted:  #7A6E65;
+$home-border:      #E0D8CE;
+
+.home-page {
+  background-color: $home-bg;
+  color: $home-text;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.home-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @include media-query($on-palm) {
+    padding: 0 16px;
+  }
+}
+
+.home-section {
+  padding: 72px 0;
+
+  @include media-query($on-palm) {
+    padding: 48px 0;
+  }
+
+  & + & {
+    border-top: 1px solid $home-border;
+  }
+}
+
+.home-section__heading {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
+  font-weight: 600;
+  color: $home-text;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+
+// -----------------------------------------------
+// Hero
+// -----------------------------------------------
+.home-hero {
+  padding: 80px 0;
+
+  @include media-query($on-palm) {
+    padding: 56px 0;
+  }
+}
+
+.home-hero__layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 64px;
+  align-items: center;
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr 260px;
+    gap: 40px;
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.home-hero__photo {
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  @include media-query($on-palm) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.home-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $home-text-muted;
+  margin-bottom: 20px;
+}
+
+.home-title {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-style: italic;
+  font-weight: 600;
+  color: $home-text;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.home-pitch {
+  font-size: 1.05em;
+  color: $home-text-muted;
+  max-width: 540px;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+
+// -----------------------------------------------
+// Propositions
+// -----------------------------------------------
+.home-props {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @include media-query($on-laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-prop-card {
+  background-color: $home-bg-card;
+  border: 1px solid $home-border;
+  border-top-width: 3px;
+  border-radius: 6px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+
+  &--conf    { border-top-color: #C44A2C; }
+  &--kismar  { border-top-color: #B07020; }
+  &--olympia { border-top-color: #3B5EA8; }
+}
+
+.home-prop-card__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $home-text-muted;
+  margin-bottom: 10px;
+}
+
+.home-prop-card__title {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: 600;
+  color: $home-text;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.home-prop-card__desc {
+  font-size: 0.875em;
+  color: $home-text-muted;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.home-prop-card__link {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: $home-text;
+  text-decoration: none;
+
+  &:visited { color: $home-text; }
+  &:hover { text-decoration: underline; }
+}
+
+
+// -----------------------------------------------
+// Dates
+// -----------------------------------------------
+.home-dates__list {
+  max-width: 640px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-date-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed $home-border;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.home-date-item__date {
+  color: $home-text-muted;
+}
+
+.home-date-item__sep {
+  color: $home-border;
+  margin: 0 4px;
+}
+
+.home-date-item__title {
+  font-weight: 600;
+  color: $home-text;
+  text-decoration: none;
+
+  &:visited { color: $home-text; }
+  &:hover { text-decoration: underline; }
+}
+
+.home-date-item__venue {
+  color: $home-text-muted;
+}
+
+.home-dates__empty {
+  font-style: italic;
+  color: $home-text-muted;
+  font-size: 0.9em;
+}
+
+
+// -----------------------------------------------
+// Contact
+// -----------------------------------------------
+.home-contact {
+  background-color: #2A2520;
+  color: #F8F6F2;
+  padding: 72px 0;
+
+  @include media-query($on-palm) {
+    padding: 48px 0;
+  }
+
+  .home-section__heading {
+    color: #F8F6F2;
+  }
+}
+
+.home-contact__pitch {
+  font-size: 1.1em;
+  color: #B8AFA8;
+  max-width: 560px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.home-contact__email {
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #F8F6F2;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:visited { color: #F8F6F2; }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    text-decoration: none;
+  }
+}

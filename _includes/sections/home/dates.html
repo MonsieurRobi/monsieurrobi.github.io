@@ -1,0 +1,21 @@
+{% assign mois_fr = "janv.|févr.|mars|avr.|mai|juin|juil.|août|sept.|oct.|nov.|déc." | split: "|" %}
+
+<section class="home-section">
+  <div class="home-inner">
+    <h2 class="home-section__heading">Les dates</h2>
+
+    <ul class="home-dates__list">
+      {% for e in site.posts %}
+        {% assign mi = e.date | date: "%-m" | minus: 1 %}
+        <li class="home-date-item">
+          <span class="home-date-item__date">{{ e.date | date: "%-d" }} {{ mois_fr[mi] }} {{ e.date | date: "%Y" }}</span>
+          <span class="home-date-item__sep">—</span>
+          <a class="home-date-item__title" href="{{ e.url }}">{{ e.venue }}</a>
+          <span class="home-date-item__sep">·</span>
+          <span class="home-date-item__venue">{{ e.city }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</section>

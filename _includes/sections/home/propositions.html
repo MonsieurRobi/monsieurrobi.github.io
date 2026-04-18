@@ -1,0 +1,34 @@
+{% assign conf   = site.data.propositions["conf"] %}
+{% assign kismar = site.data.propositions["piano-kismar"] %}
+{% assign olympia = site.data.propositions["olympia"] %}
+
+<section class="home-section">
+  <div class="home-inner">
+    <h2 class="home-section__heading">Trois façons de se retrouver</h2>
+
+    <div class="home-props">
+
+      <div class="home-prop-card home-prop-card--conf">
+        <p class="home-prop-card__label">{{ conf.format_label }}</p>
+        <h3 class="home-prop-card__title">{{ conf.full_title }}</h3>
+        <p class="home-prop-card__desc">{{ conf.description | strip }}</p>
+        <a class="home-prop-card__link" href="{{ conf.url }}">En savoir plus →</a>
+      </div>
+
+      <div class="home-prop-card home-prop-card--kismar">
+        <p class="home-prop-card__label">{{ kismar.format_label }}</p>
+        <h3 class="home-prop-card__title">{{ kismar.full_title }}</h3>
+        <p class="home-prop-card__desc">{{ kismar.description | strip }}</p>
+        <a class="home-prop-card__link" href="{{ kismar.url }}">En savoir plus →</a>
+      </div>
+
+      <div class="home-prop-card home-prop-card--olympia">
+        <p class="home-prop-card__label">Un spectacle musical improvisé</p>
+        <h3 class="home-prop-card__title">{{ olympia.title }}</h3>
+        <p class="home-prop-card__desc">{{ olympia.description | strip }}</p>
+        <a class="home-prop-card__link" href="{{ olympia.url }}">En savoir plus →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
