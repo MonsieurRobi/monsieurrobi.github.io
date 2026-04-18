@@ -376,6 +376,22 @@
   font-style: italic;
 }
 
+.conf-dates__list--past {
+  opacity: 0.5;
+}
+
+.conf-date-item--past .conf-date-item__day {
+  font-weight: 400;
+}
+
+.conf-dates--past {
+  opacity: 0.6;
+}
+
+.conf-date-item--past .conf-date-item__day {
+  font-weight: 400;
+}
+
 .conf-dates__past {
   margin-top: 24px;
 
