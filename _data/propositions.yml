@@ -30,22 +30,22 @@ conf:
   pitch: >
     Christophe Robillard a été diagnostiqué bipolaire à 20 ans. Vingt ans plus tard,
     il en a fait une conférence — une guitare à la main, un paperboard à côté, et
-    deux ou trois choses à dire sur ce qu'on bricole pour s'en débrouiller.
+    deux ou trois choses à dire sur ce qu'il bricole pour s'en débrouiller.
   pitch_highlight: "deux ou trois choses à dire"
 
   # Section "De quoi ça parle"
   about:
     - >
-      En s'appuyant sur son vécu et en convoquant des psy, des philosophes et une
-      professeure de droit public, Monsieur Robi raconte le cadre de vie qu'il
+      En s'appuyant sur son vécu et en convoquant des psy, des philosophes, des juristes,
+      Monsieur Robi raconte le cadre de vie qu'il
       s'est bricolé, les outils qu'il s'est façonnés pour se débrouiller mieux
       avec la vie.
     - >
       Mettre de la lumière sur son handicap invisible, c'est aussi une façon
       d'augmenter son pouvoir d'agir.
     - >
-      Une heure de conférence parlée, ponctuée de chansons, suivie d'un temps
-      d'échange avec la salle — souvent le moment qu'on préfère.
+      Une heure et demie de conférence gesticulée, ponctuée de chansons, suivie d'un temps
+      d'échange avec la salle.
 
   # Section "Pour qui"
   audience:
