@@ -119,15 +119,10 @@
 }
 
 .conf-hero__deco {
-  position: absolute;
-  top: -20px;
-  right: -16px;
+  display: block;
+  margin-bottom: 12px;
   pointer-events: none;
   opacity: 0.9;
-
-  @include media-query($on-palm) {
-    display: none;
-  }
 }
 
 // rem intentionnel : taille display ancrée viewport
