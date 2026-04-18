@@ -1,0 +1,386 @@
+// === Piano Kismar ===
+// Scopé sous .kismar. Couleurs via CSS custom properties (tokens ocre/or).
+// Même convention em/rem/px que _conf-bipolaire.scss.
+
+.kismar {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+  font-family: var(--font-serif);
+  font-size: 20px;
+  line-height: 1.65;
+
+  p { margin-bottom: 0; }
+  p + p { margin-top: 1em; }
+
+  a:not(.kismar-btn) {
+    color: var(--color-accent-strong);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent-soft);
+    text-underline-offset: 3px;
+    &:visited { color: var(--color-accent-strong); }
+    &:hover { opacity: 0.8; text-decoration: none; }
+  }
+}
+
+.kismar-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @include media-query($on-palm) {
+    padding: 0 16px;
+  }
+}
+
+.kismar-text-block {
+  max-width: 660px;
+}
+
+.kismar-section {
+  padding: 64px 0;
+  position: relative;
+
+  @include media-query($on-palm) {
+    padding: 48px 0;
+  }
+
+  & + & {
+    border-top: 2px dashed var(--color-border-soft);
+  }
+}
+
+.kismar-label {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+
+// -----------------------------------------------
+// Hero
+// -----------------------------------------------
+.kismar-hero {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+
+  @include media-query($on-palm) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.kismar-hero__layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 56px;
+  align-items: start;
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr 280px;
+    gap: 40px;
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.kismar-hero__portrait {
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  @include media-query($on-palm) {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+.kismar-hero__deco {
+  display: block;
+  margin-bottom: 12px;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.kismar-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.kismar-title__highlight {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-soft);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+.kismar-pitch {
+  font-size: 1.1em;
+  color: var(--color-text-secondary);
+  max-width: 580px;
+  margin-bottom: 36px;
+}
+
+.kismar-mark {
+  background-color: var(--color-highlight);
+  color: inherit;
+  padding: 1px 3px;
+  border-radius: 2px;
+  font-style: inherit;
+}
+
+.kismar-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+
+// -----------------------------------------------
+// Boutons et liens
+// -----------------------------------------------
+.kismar-btn {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transform: rotate(-1deg);
+  transition: transform 0.15s ease, opacity 0.15s ease;
+
+  &:hover {
+    transform: rotate(0deg);
+    opacity: 0.88;
+    text-decoration: none;
+  }
+}
+
+.kismar-btn--primary {
+  background-color: var(--color-accent-strong);
+  color: #fff;
+  &:visited { color: #fff; }
+}
+
+.kismar-link--arrow {
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-soft);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+
+  &:hover { color: var(--color-text-primary); text-decoration: none; }
+  &:visited { color: var(--color-text-secondary); }
+}
+
+.kismar-link--underline {
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  color: var(--color-accent-strong);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-strong);
+  text-underline-offset: 3px;
+  &:visited { color: var(--color-accent-strong); }
+}
+
+
+// -----------------------------------------------
+// Histoire
+// -----------------------------------------------
+.kismar-history__layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 48px;
+  align-items: start;
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr 240px;
+    gap: 32px;
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.kismar-history__photo {
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+}
+
+.kismar-caption {
+  font-style: italic;
+  font-size: 0.85em;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+
+
+// -----------------------------------------------
+// Dates
+// -----------------------------------------------
+.kismar-dates__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kismar-dates__list--past {
+  opacity: 0.5;
+}
+
+.kismar-date-item {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--color-border-soft);
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.kismar-date-item__date {
+  display: flex;
+  flex-direction: column;
+}
+
+.kismar-date-item__day {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.05em;
+  color: var(--color-text-primary);
+}
+
+.kismar-date-item--past .kismar-date-item__day {
+  font-weight: 400;
+}
+
+.kismar-date-item__year {
+  font-family: var(--font-sans);
+  font-size: 0.8em;
+  color: var(--color-text-muted);
+}
+
+.kismar-date-item__venue {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  strong {
+    color: var(--color-text-primary);
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  span {
+    font-family: var(--font-sans);
+    font-size: 0.875em;
+    color: var(--color-text-muted);
+  }
+}
+
+.kismar-dates__empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+
+// -----------------------------------------------
+// Contact / Inviter
+// -----------------------------------------------
+.kismar-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.kismar-practical {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 6px;
+  padding: 24px 28px;
+  margin: 32px 0;
+
+  @include media-query($on-palm) {
+    padding: 18px 16px;
+  }
+}
+
+.kismar-practical__table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr + tr td,
+  tr + tr th {
+    padding-top: 12px;
+    border-top: 1px solid var(--color-border-soft);
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 0;
+    vertical-align: top;
+  }
+
+  th {
+    font-family: var(--font-sans);
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    width: 110px;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+
+  td {
+    color: var(--color-text-primary);
+    font-size: 0.95em;
+  }
+}
+
+.kismar-contact {
+  background-color: var(--color-bg-emphasis);
+  border-radius: 8px;
+  padding: 40px 36px;
+  margin-top: 48px;
+
+  @include media-query($on-palm) {
+    padding: 28px 20px;
+  }
+
+  p {
+    color: var(--color-border-soft);
+    margin-bottom: 28px;
+    font-size: 1em;
+  }
+}
