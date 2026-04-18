@@ -81,8 +81,8 @@ conf:
         label: "Petites associations, MJC, GEM"
         text: "On en discute. Dites-moi ce que vous pouvez, je vous dis ce qui est jouable pour moi."
       - kind: "militant"
-        label: "Cafés associatifs, lieux militants au chapeau"
-        text: "Oui, c'est possible. La rencontre compte plus que le cachet."
+        label: "Cafés associatifs, lieux militants"
+        text: "Le chapeau, c'est possible. A noter que j'ai bon appétit et qu'il m'arrive d'avoir soif ! La rencontre compte plus que le cachet."
     conclusion: "Dans tous les cas : écrivez-moi, on trouvera."
 
   # Contact
