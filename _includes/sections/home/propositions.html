@@ -2,33 +2,45 @@
 {% assign kismar = site.data.propositions["piano-kismar"] %}
 {% assign olympia = site.data.propositions["olympia"] %}
 
-<section class="home-section">
+<section class="home-section home-props-bands">
   <div class="home-inner">
     <h2 class="home-section__heading">Trois façons de se retrouver</h2>
+  </div>
 
-    <div class="home-props">
-
-      <div class="home-prop-card home-prop-card--conf">
-        <p class="home-prop-card__label">{{ conf.format_label }}</p>
-        <h3 class="home-prop-card__title">{{ conf.full_title }}</h3>
-        <p class="home-prop-card__desc">{{ conf.description | strip }}</p>
-        <a class="home-prop-card__link" href="{{ conf.url }}">En savoir plus →</a>
-      </div>
-
-      <div class="home-prop-card home-prop-card--kismar">
-        <p class="home-prop-card__label">{{ kismar.format_label }}</p>
-        <h3 class="home-prop-card__title">{{ kismar.full_title }}</h3>
-        <p class="home-prop-card__desc">{{ kismar.description | strip }}</p>
-        <a class="home-prop-card__link" href="{{ kismar.url }}">En savoir plus →</a>
-      </div>
-
-      <div class="home-prop-card home-prop-card--olympia">
-        <p class="home-prop-card__label">Un spectacle musical improvisé</p>
-        <h3 class="home-prop-card__title">{{ olympia.title }}</h3>
-        <p class="home-prop-card__desc">{{ olympia.description | strip }}</p>
-        <a class="home-prop-card__link" href="{{ olympia.url }}">En savoir plus →</a>
-      </div>
-
+  <div class="home-band">
+    <div class="home-band__photo">
+      <img src="/assets/{{ conf.image }}" alt="{{ conf.full_title }}">
+    </div>
+    <div class="home-band__text">
+      <p class="home-band__label">{{ conf.format_label }}</p>
+      <h3 class="home-band__title">{{ conf.full_title }}</h3>
+      <p class="home-band__pitch">{{ conf.pitch | strip }}</p>
+      <a class="home-band__link" href="{{ conf.url }}">En savoir plus →</a>
     </div>
   </div>
+
+  <div class="home-band home-band--reverse">
+    <div class="home-band__photo">
+      <img src="/assets/{{ kismar.image }}" alt="{{ kismar.full_title }}">
+    </div>
+    <div class="home-band__text">
+      <p class="home-band__label">{{ kismar.format_label }}</p>
+      <h3 class="home-band__title">{{ kismar.full_title }}</h3>
+      <p class="home-band__pitch">{{ kismar.pitch | strip }}</p>
+      <a class="home-band__link" href="{{ kismar.url }}">En savoir plus →</a>
+    </div>
+  </div>
+
+  <div class="home-band">
+    <div class="home-band__photo">
+      <img src="/assets/{{ olympia.image }}" alt="{{ olympia.title }}">
+    </div>
+    <div class="home-band__text">
+      <p class="home-band__label">Un spectacle musical improvisé</p>
+      <h3 class="home-band__title">{{ olympia.title }}</h3>
+      <p class="home-band__pitch">{{ olympia.description | strip | truncatewords: 30 }}</p>
+      <a class="home-band__link" href="{{ olympia.url }}">En savoir plus →</a>
+    </div>
+  </div>
+
 </section>
