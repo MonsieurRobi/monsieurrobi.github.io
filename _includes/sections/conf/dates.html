@@ -1,0 +1,34 @@
+<section class="conf-section conf-dates" id="dates">
+  <div class="conf-inner">
+    <p class="conf-label">Prochaines dates</p>
+
+    {% assign conf_events = site.posts | where: "propale", "conf" %}
+    {% assign future_events = conf_events | where_exp: "e", "e.date >= site.time" | sort: "date" %}
+
+    {% if future_events.size > 0 %}
+    <ul class="conf-dates__list">
+      {% for event in future_events %}
+      <li class="conf-date-item">
+        <div class="conf-date-item__date">
+          <span class="conf-date-item__day">{{ event.date | date: "%-d %b" }}</span>
+          <span class="conf-date-item__year">{{ event.date | date: "%Y" }}</span>
+        </div>
+        <div class="conf-date-item__venue">
+          <strong>{{ event.venue }}</strong>
+          <span>{{ event.city }}{% if event.address %}, {{ event.address }}{% endif %}</span>
+        </div>
+        {% if event.booking_url %}
+        <div class="conf-date-item__booking">
+          <a href="{{ event.booking_url }}" class="conf-link--underline">Réserver</a>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="conf-dates__empty">Prochaines dates à annoncer.</p>
+    {% endif %}
+
+    <p class="conf-dates__past"><span>Dates passées — à venir</span></p>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+<section class="conf-section conf-hosting" id="accueillir">
+  <div class="conf-inner">
+    <p class="conf-label">Pour les programmateurs</p>
+    <h2 class="conf-heading">Accueillir cette conférence chez vous</h2>
+
+    {% for para in propale.audience.intro %}
+    <p>{{ para | strip }}</p>
+    {% endfor %}
+
+    <div class="conf-practical">
+      <table class="conf-practical__table">
+        <tr>
+          <th>Durée</th>
+          <td>{{ propale.practical.duration }}</td>
+        </tr>
+        <tr>
+          <th>Jauge</th>
+          <td>{{ propale.practical.audience_size }}</td>
+        </tr>
+        <tr>
+          <th>Espace</th>
+          <td>{{ propale.practical.space }}</td>
+        </tr>
+        <tr>
+          <th>À prévoir</th>
+          <td>{{ propale.practical.requirements }}</td>
+        </tr>
+        <tr>
+          <th>Apporté</th>
+          <td>{{ propale.practical.provided }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="conf-subheading">Combien ça coûte ?</h3>
+    <p>{{ propale.pricing.intro }}</p>
+
+    <div class="conf-pricing">
+      {% for case in propale.pricing.cases %}
+      <div class="conf-pricing-case conf-pricing-case--{{ case.kind }}">
+        <strong>{{ case.label }}</strong>
+        <p>{{ case.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="conf-pricing__conclusion"><em>{{ propale.pricing.conclusion }}</em></p>
+
+    <div class="conf-contact">
+      <p>{{ propale.contact.pitch }}</p>
+      <a href="mailto:{{ propale.contact.email }}?subject={{ propale.contact.email_subject | url_encode }}"
+         class="conf-btn conf-btn--primary">
+        Écrire à {{ propale.contact.email }}
+      </a>
+    </div>
+  </div>
+</section>

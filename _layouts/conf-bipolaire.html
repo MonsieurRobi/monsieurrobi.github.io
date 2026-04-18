@@ -1,0 +1,26 @@
+---
+propale: conf
+---
+{% assign propale = site.data.propositions["conf"] %}
+<!DOCTYPE html>
+<html lang="fr">
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="conf-bipolaire">
+      {% include sections/conf/hero.html %}
+      {% include sections/conf/about.html %}
+      {% include sections/conf/media.html %}
+      {% include sections/conf/quotes.html %}
+      {% include sections/conf/dates.html %}
+      {% include sections/conf/hosting.html %}
+      {% include sections/conf/newsletter.html %}
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

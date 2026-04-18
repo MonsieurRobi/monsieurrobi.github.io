@@ -1,0 +1,8 @@
+<section class="conf-section conf-about">
+  <div class="conf-inner">
+    <p class="conf-label">De quoi ça parle</p>
+    {% for para in propale.about %}
+    <p>{{ para | strip }}</p>
+    {% endfor %}
+  </div>
+</section>

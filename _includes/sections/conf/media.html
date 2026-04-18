@@ -1,0 +1,37 @@
+<section class="conf-section conf-media">
+  <div class="conf-inner">
+    <p class="conf-label">Voir et entendre</p>
+
+    {% if propale.media.video_url %}
+    <div class="conf-video">
+      <iframe src="{{ propale.media.video_url }}" frameborder="0" allowfullscreen title="Vidéo de la conférence"></iframe>
+    </div>
+    {% else %}
+    <div class="conf-video-placeholder" aria-hidden="true">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M19 16l14 8-14 8V16z" fill="currentColor"/>
+      </svg>
+      <span>Captation à venir</span>
+    </div>
+    {% endif %}
+
+    <div class="conf-photos">
+      {% if propale.media.photos.size > 0 %}
+        {% for photo in propale.media.photos limit:3 %}
+        <div class="conf-photo">
+          <img src="/assets/{{ photo }}" alt="">
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="conf-photo conf-photo--placeholder" aria-hidden="true"></div>
+        <div class="conf-photo conf-photo--placeholder" aria-hidden="true"></div>
+        <div class="conf-photo conf-photo--placeholder" aria-hidden="true"></div>
+      {% endif %}
+    </div>
+
+    {% if propale.media.photos_caption %}
+    <p class="conf-caption">{{ propale.media.photos_caption }}</p>
+    {% endif %}
+  </div>
+</section>
