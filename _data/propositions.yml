@@ -4,6 +4,50 @@ olympia:
   image: "robi_back.jpg"
   description: "Dans sa quête de célébrité, Monsieur Robi prépare son Olympia 2027. Mais il se heurte à un souci de taille : il n'a qu'une chanson à son répertoire... Il sillonne alors les routes de France pour préparer son spectacle avec vous. Alors, envie de participer à cette expérience inédite ? Envie de changer, de s'marrer, et même de créer ? Ce spectacle musical improvisé est décidémment à ne pas manquer !"
 
+  # Identité
+  full_title: "Monsieur Robi prépare son Olympia"
+  format_label: "Un spectacle musical improvisé"
+  highlight_word: "Olympia"
+
+  # Pitch
+  pitch: >
+    Dans sa quête de célébrité, Monsieur Robi prépare son Olympia 2027.
+    Mais il se heurte à un souci de taille : il n'a qu'une chanson à son répertoire.
+    Il sillonne alors les routes de France pour préparer son spectacle avec vous.
+
+  # About
+  about:
+    - >
+      Envie de participer à cette expérience inédite ?
+      Envie de changer, de s'marrer, et même de créer ?
+      Ce spectacle musical improvisé est décidément à ne pas manquer !
+    - >
+      On ne peut pas vous dire ce que ce sera précisément — vu qu'il y a une large
+      part d'improvisation. Mais on peut vous dire que ça se passe avec le public,
+      pas devant lui.
+
+  # Contact
+  contact:
+    pitch: "Envie d'accueillir le spectacle dans votre lieu ? Écrivez-nous."
+    email_subject: "Accueillir Monsieur Robi"
+
+  # Design tokens
+  design:
+    colors:
+      bg_primary: "#F7F5F0"
+      bg_card: "#FFFFFF"
+      bg_emphasis: "#1A1E35"
+      text_primary: "#1A1810"
+      text_secondary: "#3A3828"
+      text_muted: "#7A7060"
+      accent_strong: "#8B6010"
+      accent_soft: "#B07820"
+      highlight: "#FFF0C0"
+      border_soft: "#D8D0C0"
+    fonts:
+      serif: "'Crimson Pro', Georgia, 'Iowan Old Style', serif"
+      sans: "system-ui, -apple-system, 'Helvetica Neue', sans-serif"
+
 piano-kismar:
   # Champs existants
   title: "Piano Kismar"

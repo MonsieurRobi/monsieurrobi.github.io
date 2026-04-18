@@ -1,0 +1,26 @@
+<section class="olympia-section olympia-hero">
+  <div class="olympia-inner">
+    <div class="olympia-hero__layout">
+
+      <div class="olympia-hero__text">
+        <p class="olympia-label">{{ propale.format_label }}</p>
+
+        <h1 class="olympia-title">
+          {% assign title_parts = propale.full_title | split: propale.highlight_word %}
+          {% if title_parts.size == 2 %}
+            {{ title_parts[0] }}<span class="olympia-title__highlight">{{ propale.highlight_word }}</span>{{ title_parts[1] }}
+          {% else %}
+            {{ propale.full_title }}
+          {% endif %}
+        </h1>
+
+        <p class="olympia-pitch">{{ propale.pitch | strip }}</p>
+      </div>
+
+      <div class="olympia-hero__portrait">
+        <img src="/assets/{{ propale.image }}" alt="{{ propale.full_title }}">
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+propale: olympia
+---
+{% assign propale = site.data.propositions["olympia"] %}
+<!DOCTYPE html>
+<html lang="fr">
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="olympia">
+      {% include sections/olympia/hero.html %}
+      {% include sections/olympia/about.html %}
+      {% include sections/olympia/media.html %}
+      {% include sections/olympia/dates.html %}
+      {% include sections/olympia/contact.html %}
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

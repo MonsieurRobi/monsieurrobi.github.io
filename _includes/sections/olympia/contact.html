@@ -1,0 +1,13 @@
+<section class="olympia-section olympia-contact-section" id="accueillir">
+  <div class="olympia-inner">
+    <p class="olympia-label">Pour les programmateurs</p>
+    <h2 class="olympia-heading">Accueillir le spectacle</h2>
+    <div class="olympia-contact">
+      <p>{{ propale.contact.pitch }}</p>
+      <a href="mailto:{{ site.email }}?subject={{ propale.contact.email_subject | url_encode }}"
+         class="olympia-btn olympia-btn--primary">
+        Écrire à {{ site.email }}
+      </a>
+    </div>
+  </div>
+</section>

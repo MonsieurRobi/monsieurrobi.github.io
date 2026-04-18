@@ -1,0 +1,39 @@
+{% assign mois_fr = "janv.|févr.|mars|avr.|mai|juin|juil.|août|sept.|oct.|nov.|déc." | split: "|" %}
+{% assign olympia_dates = site.posts | where: "layout", "proposition-olympia" %}
+{% assign upcoming = olympia_dates | where_exp: "e", "e.date >= site.time" %}
+{% assign past = olympia_dates | where_exp: "e", "e.date < site.time" %}
+
+<section class="olympia-section" id="dates">
+  <div class="olympia-inner">
+    <p class="olympia-label">Les dates</p>
+
+    {% if upcoming.size > 0 %}
+      <ul class="olympia-dates__list">
+        {% for e in upcoming %}
+          {% assign mi = e.date | date: "%-m" | minus: 1 %}
+          <li class="olympia-date-item">
+            <div class="olympia-date-item__date">{{ e.date | date: "%-d" }} {{ mois_fr[mi] }} {{ e.date | date: "%Y" }}</div>
+            <a class="olympia-date-item__title" href="{{ e.url }}">{{ e.venue }}</a>
+            <div class="olympia-date-item__venue">{{ e.city }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="olympia-dates__empty">Pas de date prévue pour l'instant — ça se prépare.</p>
+    {% endif %}
+
+    {% if past.size > 0 %}
+      <ul class="olympia-dates__list olympia-dates__list--past">
+        {% for e in past %}
+          {% assign mi = e.date | date: "%-m" | minus: 1 %}
+          <li class="olympia-date-item">
+            <div class="olympia-date-item__date">{{ e.date | date: "%-d" }} {{ mois_fr[mi] }} {{ e.date | date: "%Y" }}</div>
+            <a class="olympia-date-item__title" href="{{ e.url }}">{{ e.venue }}</a>
+            <div class="olympia-date-item__venue">{{ e.city }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+  </div>
+</section>

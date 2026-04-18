@@ -1,0 +1,8 @@
+<section class="olympia-section" id="concept">
+  <div class="olympia-inner olympia-text-block">
+    <p class="olympia-label">Le concept</p>
+    {% for para in propale.about %}
+    <p>{{ para | strip }}</p>
+    {% endfor %}
+  </div>
+</section>
