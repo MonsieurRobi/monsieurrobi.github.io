@@ -1,7 +1,6 @@
 olympia:
   title: "Olympia"
   url: "/olympia"
-  description: "Bim bam boum"
   image: "robi_back.jpg"
   description: "Dans sa quête de célébrité, Monsieur Robi prépare son Olympia 2027. Mais il se heurte à un souci de taille : il n'a qu'une chanson à son répertoire... Il sillonne alors les routes de France pour préparer son spectacle avec vous. Alors, envie de participer à cette expérience inédite ? Envie de changer, de s'marrer, et même de créer ? Ce spectacle musical improvisé est décidémment à ne pas manquer !"
 
@@ -12,10 +11,118 @@ piano-kismar:
   description: "Envie de chanter autour d'un piano tout plein de chansons qui mettent du baume en coêur ? Monsieur Robi ramène son piano, amenez votre bonne humeur et c'est parti pour chanter, boire et s'marrer !"
 
 conf:
+  # Champs existants (utilisés par post.html, index.html, header.html, feed.xml)
   title: "Conférence gesticulée"
   url: "/bipolaire"
   image: "tout-le-monde-bipolaire.jpg"
-  description: Christophe Robillard, diagnostiqué bipolaire à l’âge de 20 ans, nous raconte le cadre de vie qu’il s’est bricolé, les outils qu’il s’est façonné pour se débrouiller mieux avec la vie. Mettre de la lumière sur son handicap invisible, c’est aussi une façon d’augmenter son pouvoir d’agir.
+  description: >
+    Christophe Robillard, diagnostiqué bipolaire à l'âge de 20 ans, nous raconte
+    le cadre de vie qu'il s'est bricolé, les outils qu'il s'est façonné pour se
+    débrouiller mieux avec la vie. Mettre de la lumière sur son handicap invisible,
+    c'est aussi une façon d'augmenter son pouvoir d'agir.
+
+  # Identité de la proposition
+  full_title: "Tout le monde n'a pas la chance d'être bipolaire"
+  format_label: "Une conférence gesticulée"
+  highlight_word: "chance"
+
+  # Pitch
+  pitch: >
+    Christophe Robillard a été diagnostiqué bipolaire à 20 ans. Vingt ans plus tard,
+    il en a fait une conférence — une guitare à la main, un paperboard à côté, et
+    deux ou trois choses à dire sur ce qu'on bricole pour s'en débrouiller.
+  pitch_highlight: "deux ou trois choses à dire"
+
+  # Section "De quoi ça parle"
+  about:
+    - >
+      En s'appuyant sur son vécu et en convoquant des psy, des philosophes et une
+      professeure de droit public, Monsieur Robi raconte le cadre de vie qu'il
+      s'est bricolé, les outils qu'il s'est façonnés pour se débrouiller mieux
+      avec la vie.
+    - >
+      Mettre de la lumière sur son handicap invisible, c'est aussi une façon
+      d'augmenter son pouvoir d'agir.
+    - >
+      Une heure de conférence parlée, ponctuée de chansons, suivie d'un temps
+      d'échange avec la salle — souvent le moment qu'on préfère.
+
+  # Section "Pour qui"
+  audience:
+    intro:
+      - >
+        Cette conférence se joue particulièrement bien dans les lieux d'éducation
+        populaire — MJC, coopératives, associations qui veulent ouvrir un débat
+        sur la santé mentale sans tomber dans le médical.
+      - >
+        Elle trouve aussi sa place dans les structures de santé mentale — GEM,
+        associations de patients, formations de soignants — pour qui le témoignage
+        incarné fait écho à des vécus partagés.
+      - >
+        Format intime privilégié : 20 à 80 personnes. Ce n'est pas un spectacle
+        qu'on regarde, c'est une rencontre qu'on partage.
+
+  # Conditions pratiques
+  practical:
+    duration: "1h de conférence + temps d'échange (30 min à 1h)"
+    audience_size: "20 à 80 personnes"
+    space: "N'importe quelle salle où on voit et on entend"
+    requirements: "Une chaise, une petite table, un paperboard avec feutres"
+    provided: "Une guitare"
+
+  # Tarification
+  pricing:
+    intro: "Le tarif dépend de la nature de votre lieu :"
+    cases:
+      - kind: "institution"
+        label: "Lieux culturels et institutions"
+        text: "Tarif sur devis, dans les standards du milieu (conférence gesticulée, format intime)."
+      - kind: "small"
+        label: "Petites associations, MJC, GEM"
+        text: "On en discute. Dites-moi ce que vous pouvez, je vous dis ce qui est jouable pour moi."
+      - kind: "militant"
+        label: "Cafés associatifs, lieux militants au chapeau"
+        text: "Oui, c'est possible. La rencontre compte plus que le cachet."
+    conclusion: "Dans tous les cas : écrivez-moi, on trouvera."
+
+  # Contact
+  contact:
+    pitch: "Écrivez-moi en quelques lignes : où, quand, dans quel cadre, et pour quel public. Je vous réponds toujours."
+    email: "bonjour@monsieurrobi.com"
+    email_subject: "Accueillir la conférence bipolaire"
+
+  # Citations
+  quotes:
+    - text: >
+        Robi a une tornade dans le corps, et parfois un frigo vide dans le cœur. […]
+        Il chante aussi, joue d'un tas d'instruments, peut tenir un show tout seul
+        face à trois personnes avec la même énergie que s'il faisait Bercy.
+      author: "Marie Louvet"
+      author_role: "Coopérative Citoyenne"
+
+  # Médias
+  media:
+    video_url: null
+    photos: []
+    photos_caption: "Photos et captation à La Maison Perchée, mai 2026."
+
+  # Design tokens
+  design:
+    colors:
+      bg_primary: "#F4EDE0"
+      bg_card: "#FFF8EE"
+      bg_emphasis: "#2C1810"
+      text_primary: "#2C1810"
+      text_secondary: "#4A3525"
+      text_muted: "#8B5A3C"
+      accent_strong: "#C44A2C"
+      accent_soft: "#E8954A"
+      highlight: "#FFE89C"
+      border_soft: "#D4C4AB"
+    fonts:
+      serif: "'Crimson Pro', Georgia, 'Iowan Old Style', serif"
+      sans: "system-ui, -apple-system, 'Helvetica Neue', sans-serif"
+
 ecole:
   title: "Interventions"
   url: "/ecole"
@@ -24,4 +131,3 @@ ecole:
     Monsieur Robi intervient régulièrement en milieu scolaire. Il propose principalement :
       - des ateliers d'initiation au chant et à la pratique musicale
       - des ateliers où les élèves créent avec lui des chansons
-
