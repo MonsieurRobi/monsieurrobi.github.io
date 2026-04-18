@@ -30,9 +30,9 @@
 
     <div class="kismar-contact">
       <p>{{ propale.contact.pitch }}</p>
-      <a href="mailto:{{ propale.contact.email }}?subject={{ propale.contact.email_subject | url_encode }}"
+      <a href="mailto:{{ site.email }}?subject={{ propale.contact.email_subject | url_encode }}"
          class="kismar-btn kismar-btn--primary">
-        Écrire à {{ propale.contact.email }}
+        Écrire à {{ site.email }}
       </a>
     </div>
   </div>

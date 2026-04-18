@@ -60,7 +60,6 @@ piano-kismar:
   # Contact
   contact:
     pitch: "Dites-moi où vous êtes, quand, et combien vous serez. On s'organise."
-    email: "christophe@lepianokismar.com"
     email_subject: "Inviter le Piano Kismar"
 
   # Médias
@@ -165,7 +164,6 @@ conf:
   # Contact
   contact:
     pitch: "Écrivez-moi en quelques lignes : où, quand, dans quel cadre, et pour quel public. Je vous réponds toujours."
-    email: "bonjour@monsieurrobi.com"
     email_subject: "Accueillir la conférence bipolaire"
 
   # Citations
