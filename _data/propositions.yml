@@ -64,7 +64,7 @@ conf:
 
   # Conditions pratiques
   practical:
-    duration: "1h de conférence + temps d'échange (30 min à 1h)"
+    duration: "1h30 de conférence + temps d'échange (30mn)"
     audience_size: "20 à 80 personnes"
     space: "N'importe quelle salle où on voit et on entend"
     requirements: "Une chaise, une petite table, un paperboard avec feutres"
