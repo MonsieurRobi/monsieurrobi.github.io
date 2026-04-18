@@ -1,5 +1,6 @@
 <section class="conf-section conf-quotes">
   <div class="conf-inner">
+    <div class="conf-text-block">
     <p class="conf-label">Ce qu'on en dit</p>
     {% for quote in propale.quotes %}
     <blockquote class="conf-quote">
@@ -7,5 +8,6 @@
       <footer class="conf-quote__attr">— {{ quote.author }}, <span>{{ quote.author_role }}</span></footer>
     </blockquote>
     {% endfor %}
+    </div>
   </div>
 </section>
