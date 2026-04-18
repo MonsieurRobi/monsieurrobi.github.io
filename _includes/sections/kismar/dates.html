@@ -1,0 +1,54 @@
+{% assign mois_fr = "janv.|févr.|mars|avr.|mai|juin|juil.|août|sept.|oct.|nov.|déc." | split: "|" %}
+
+<section class="kismar-section kismar-dates" id="dates">
+  <div class="kismar-inner">
+    <p class="kismar-label">Prochaines dates</p>
+
+    {% assign kismar_events = site.posts | where: "layout", "proposition-kismar" %}
+    {% assign future_events = kismar_events | where_exp: "e", "e.date >= site.time" | sort: "date" %}
+    {% assign past_events = kismar_events | where_exp: "e", "e.date < site.time" | sort: "date" | reverse %}
+
+    {% if future_events.size > 0 %}
+    <ul class="kismar-dates__list">
+      {% for event in future_events %}
+      {% assign mois_index = event.date | date: "%-m" | minus: 1 %}
+      <li class="kismar-date-item">
+        <div class="kismar-date-item__date">
+          <span class="kismar-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }}</span>
+          <span class="kismar-date-item__year">{{ event.date | date: "%Y" }}</span>
+        </div>
+        <div class="kismar-date-item__venue">
+          <strong>{{ event.venue }}</strong>
+          <span>{{ event.city }}{% if event.address %}, {{ event.address }}{% endif %}</span>
+        </div>
+        {% if event.booking_url %}
+        <div class="kismar-date-item__booking">
+          <a href="{{ event.booking_url }}" class="kismar-link--underline">Réserver</a>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="kismar-dates__empty">Prochaines dates à annoncer.</p>
+    {% endif %}
+
+    {% if past_events.size > 0 %}
+    <ul class="kismar-dates__list kismar-dates__list--past">
+      {% for event in past_events %}
+      {% assign mois_index = event.date | date: "%-m" | minus: 1 %}
+      <li class="kismar-date-item kismar-date-item--past">
+        <div class="kismar-date-item__date">
+          <span class="kismar-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }}</span>
+          <span class="kismar-date-item__year">{{ event.date | date: "%Y" }}</span>
+        </div>
+        <div class="kismar-date-item__venue">
+          <strong>{{ event.venue }}</strong>
+          <span>{{ event.city }}{% if event.address %}, {{ event.address }}{% endif %}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="kismar-section kismar-history">
+  <div class="kismar-inner">
+    <div class="kismar-history__layout">
+      <div class="kismar-text-block">
+        <p class="kismar-label">L'histoire</p>
+        {% for para in propale.history %}
+        <p>{{ para | strip }}</p>
+        {% endfor %}
+        {% if propale.history_link %}
+        <p>
+          <a href="{{ propale.history_link.url }}" class="kismar-link--underline" target="_blank" rel="noopener">
+            {{ propale.history_link.label }} →
+          </a>
+        </p>
+        {% endif %}
+      </div>
+
+      {% if propale.media.photos.size > 0 %}
+      <div class="kismar-history__photo">
+        <img src="/assets/{{ propale.media.photos[0] }}" alt="{{ propale.media.photos_caption }}">
+        {% if propale.media.photos_caption %}
+        <p class="kismar-caption">{{ propale.media.photos_caption }}</p>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

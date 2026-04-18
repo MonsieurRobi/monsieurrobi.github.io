@@ -1,0 +1,10 @@
+<section class="kismar-section kismar-about">
+  <div class="kismar-inner">
+    <div class="kismar-text-block">
+      <p class="kismar-label">Comment ça se passe</p>
+      {% for para in propale.about %}
+      <p>{{ para | strip }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

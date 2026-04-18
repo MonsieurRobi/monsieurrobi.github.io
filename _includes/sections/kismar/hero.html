@@ -1,0 +1,43 @@
+<section class="kismar-section kismar-hero">
+  <div class="kismar-inner">
+    <div class="kismar-hero__layout">
+
+      <div class="kismar-hero__text">
+        <svg class="kismar-hero__deco" width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8,50 Q28,8 58,28 Q76,42 90,18" stroke="var(--color-accent-soft)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M84,14 L90,18 L85,24" stroke="var(--color-accent-soft)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <p class="kismar-label">{{ propale.format_label }}</p>
+
+        <h1 class="kismar-title">
+          {% assign title_parts = propale.full_title | split: propale.highlight_word %}
+          {% if title_parts.size == 2 %}
+            {{ title_parts[0] }}<span class="kismar-title__highlight">{{ propale.highlight_word }}</span>{{ title_parts[1] }}
+          {% else %}
+            {{ propale.full_title }}
+          {% endif %}
+        </h1>
+
+        <p class="kismar-pitch">
+          {% assign pitch = propale.pitch | strip %}
+          {% assign pitch_parts = pitch | split: propale.pitch_highlight %}
+          {% if pitch_parts.size == 2 %}
+            {{ pitch_parts[0] }}<mark class="kismar-mark">{{ propale.pitch_highlight }}</mark>{{ pitch_parts[1] }}
+          {% else %}
+            {{ pitch }}
+          {% endif %}
+        </p>
+
+        <div class="kismar-hero__actions">
+          <a href="#inviter" class="kismar-btn kismar-btn--primary">Inviter le Piano Kismar</a>
+          <a href="#dates" class="kismar-link--arrow">Voir les prochaines dates</a>
+        </div>
+      </div>
+
+      <div class="kismar-hero__portrait">
+        <img src="/assets/{{ propale.image }}" alt="{{ propale.full_title }}">
+      </div>
+
+    </div>
+  </div>
+</section>

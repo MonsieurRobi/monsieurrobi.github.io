@@ -1,0 +1,39 @@
+<section class="kismar-section kismar-contact-section" id="inviter">
+  <div class="kismar-inner">
+    <p class="kismar-label">Pour les organisateurs</p>
+    <h2 class="kismar-heading">Inviter le Piano Kismar chez vous</h2>
+
+    <div class="kismar-practical">
+      <table class="kismar-practical__table">
+        <tr>
+          <th>Durée</th>
+          <td>{{ propale.practical.duration }}</td>
+        </tr>
+        <tr>
+          <th>Jauge</th>
+          <td>{{ propale.practical.audience_size }}</td>
+        </tr>
+        <tr>
+          <th>Espace</th>
+          <td>{{ propale.practical.space }}</td>
+        </tr>
+        <tr>
+          <th>À prévoir</th>
+          <td>{{ propale.practical.requirements }}</td>
+        </tr>
+        <tr>
+          <th>Apporté</th>
+          <td>{{ propale.practical.provided }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="kismar-contact">
+      <p>{{ propale.contact.pitch }}</p>
+      <a href="mailto:{{ propale.contact.email }}?subject={{ propale.contact.email_subject | url_encode }}"
+         class="kismar-btn kismar-btn--primary">
+        Écrire à {{ propale.contact.email }}
+      </a>
+    </div>
+  </div>
+</section>
