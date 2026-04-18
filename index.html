@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign mois_fr = "janv.|févr.|mars|avr.|mai|juin|juil.|août|sept.|oct.|nov.|déc." | split: "|" %}
 
 <div class="home">
   <p>{{ site.description }}</p>
@@ -12,8 +13,9 @@ layout: default
 
   <ul class="post-list">
     {% for post in next_events %}
+      {% assign mois_index = post.date | date: "%-m" | minus: 1 %}
       <li>
-        <span class="">{{ post.date | date: "%-d %b %Y" }} à {{ post.city }}</span>
+        <span class="">{{ post.date | date: "%-d" }} {{ mois_fr[mois_index] }} {{ post.date | date: "%Y" }} à {{ post.city }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -25,8 +27,9 @@ layout: default
   <h1 class="page-heading">Dates passées</h1>
   <ul class="post-list">
     {% for post in previous_events %}
+      {% assign mois_index = post.date | date: "%-m" | minus: 1 %}
       <li>
-        <span class="">{{ post.date | date: "%-d %b %Y" }} à {{ post.city }}</span>
+        <span class="">{{ post.date | date: "%-d" }} {{ mois_fr[mois_index] }} {{ post.date | date: "%Y" }} à {{ post.city }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
