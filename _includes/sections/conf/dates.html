@@ -1,3 +1,5 @@
+{% assign mois_fr = "janv.|févr.|mars|avr.|mai|juin|juil.|août|sept.|oct.|nov.|déc." | split: "|" %}
+
 <section class="conf-section conf-dates" id="dates">
   <div class="conf-inner">
     <p class="conf-label">Prochaines dates</p>
@@ -9,9 +11,10 @@
     {% if future_events.size > 0 %}
     <ul class="conf-dates__list">
       {% for event in future_events %}
+      {% assign mois_index = event.date | date: "%-m" | minus: 1 %}
       <li class="conf-date-item">
         <div class="conf-date-item__date">
-          <span class="conf-date-item__day">{{ event.date | date: "%-d %b" }}</span>
+          <span class="conf-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }}</span>
           <span class="conf-date-item__year">{{ event.date | date: "%Y" }}</span>
         </div>
         <div class="conf-date-item__venue">
@@ -33,9 +36,10 @@
     {% if past_events.size > 0 %}
     <ul class="conf-dates__list conf-dates__list--past">
       {% for event in past_events %}
+      {% assign mois_index = event.date | date: "%-m" | minus: 1 %}
       <li class="conf-date-item conf-date-item--past">
         <div class="conf-date-item__date">
-          <span class="conf-date-item__day">{{ event.date | date: "%-d %b" }}</span>
+          <span class="conf-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }}</span>
           <span class="conf-date-item__year">{{ event.date | date: "%Y" }}</span>
         </div>
         <div class="conf-date-item__venue">
