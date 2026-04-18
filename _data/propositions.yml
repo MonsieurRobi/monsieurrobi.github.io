@@ -5,10 +5,87 @@ olympia:
   description: "Dans sa quête de célébrité, Monsieur Robi prépare son Olympia 2027. Mais il se heurte à un souci de taille : il n'a qu'une chanson à son répertoire... Il sillonne alors les routes de France pour préparer son spectacle avec vous. Alors, envie de participer à cette expérience inédite ? Envie de changer, de s'marrer, et même de créer ? Ce spectacle musical improvisé est décidémment à ne pas manquer !"
 
 piano-kismar:
+  # Champs existants
   title: "Piano Kismar"
   url: "/piano-kismar"
   image: "table_kismar.jpg"
-  description: "Envie de chanter autour d'un piano tout plein de chansons qui mettent du baume en coêur ? Monsieur Robi ramène son piano, amenez votre bonne humeur et c'est parti pour chanter, boire et s'marrer !"
+  description: "Envie de chanter autour d'un piano tout plein de chansons qui mettent du baume en cœur ? Monsieur Robi ramène son piano, amenez votre bonne humeur et c'est parti pour chanter, boire et s'marrer !"
+
+  # Identité
+  full_title: "Le Piano Kismar"
+  format_label: "Une animation musicale"
+  highlight_word: "Kismar"
+
+  # Pitch
+  pitch: >
+    Vous invitez une dizaine d'amis dans votre bar, votre maison, votre salon —
+    Monsieur Robi débarque avec son piano et on passe la soirée à chanter
+    Gainsbourg, Renaud, Brassens, et tout ce qu'on a envie de chanter ensemble.
+  pitch_highlight: "tout ce qu'on a envie de chanter ensemble"
+
+  # Comment ça se passe
+  about:
+    - >
+      Vous choisissez une date, vous invitez une dizaine d'ami·e·s.
+      Le jour J, Monsieur Robi arrive avec son piano électrique,
+      installe tout ça, et c'est parti.
+    - >
+      Au programme : Gainsbourg, Renaud, Johnny, Goldman, Brassens —
+      ou n'importe quelle chanson pourvu qu'on ait envie de la chanter ensemble.
+      On fait ça à la cool, pour passer un bon moment et se tenir chaud.
+    - >
+      Pas besoin de savoir chanter. Juste l'envie d'être là.
+
+  # L'histoire
+  history:
+    - >
+      Quand Monsieur Robi s'est installé à Châteldon en 2019 — un village du
+      Puy-de-Dôme, unique en son genre — il s'est promené de foyer en foyer
+      pendant un an, clavier dans les bras, pour faire chanter ceux qui lui
+      ouvraient leur porte et leur salon.
+    - >
+      C'est comme ça qu'est né le Piano Kismar.
+  history_link:
+    label: "Un article de La Montagne en témoigne"
+    url: "https://www.lamontagne.fr/chateldon-63290/loisirs/une-animation-en-chansons-et-au-piano-gratuitement-chez-soi-c-est-possible-a-chateldon-puy-de-dome-avec-le-piano-kismar_13686435/"
+
+  # Conditions pratiques
+  practical:
+    duration: "2 à 3h, selon l'ambiance"
+    audience_size: "5 à 30 personnes"
+    space: "Bar, salon, appartement — n'importe quel endroit où on peut s'asseoir en cercle"
+    requirements: "Des chaises, une prise électrique"
+    provided: "Un piano électrique et tout le matériel sono"
+
+  # Contact
+  contact:
+    pitch: "Dites-moi où vous êtes, quand, et combien vous serez. On s'organise."
+    email: "christophe@lepianokismar.com"
+    email_subject: "Inviter le Piano Kismar"
+
+  # Médias
+  media:
+    video_url: null
+    photos:
+      - "public-kismar.jpg"
+    photos_caption: "Piano Kismar au bistro de Morancé, juin 2023."
+
+  # Design tokens
+  design:
+    colors:
+      bg_primary: "#F5EED8"
+      bg_card: "#FFF8E8"
+      bg_emphasis: "#2A2010"
+      text_primary: "#2A2010"
+      text_secondary: "#4A3A20"
+      text_muted: "#8A7040"
+      accent_strong: "#B07020"
+      accent_soft: "#D4A840"
+      highlight: "#FFF0A0"
+      border_soft: "#D8C898"
+    fonts:
+      serif: "'Crimson Pro', Georgia, 'Iowan Old Style', serif"
+      sans: "system-ui, -apple-system, 'Helvetica Neue', sans-serif"
 
 conf:
   # Champs existants (utilisés par post.html, index.html, header.html, feed.xml)
