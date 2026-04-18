@@ -115,6 +115,7 @@
 
   @include media-query($on-palm) {
     max-width: 260px;
+    margin: 0 auto;
   }
 }
 
@@ -382,24 +383,6 @@
 
 .conf-date-item--past .conf-date-item__day {
   font-weight: 400;
-}
-
-.conf-dates--past {
-  opacity: 0.6;
-}
-
-.conf-date-item--past .conf-date-item__day {
-  font-weight: 400;
-}
-
-.conf-dates__past {
-  margin-top: 24px;
-
-  span {
-    font-family: var(--font-sans);
-    font-size: 0.875em;
-    color: var(--color-text-muted);
-  }
 }
 
 
