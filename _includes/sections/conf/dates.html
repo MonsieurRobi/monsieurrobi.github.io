@@ -14,7 +14,7 @@
       {% assign mois_index = event.date | date: "%-m" | minus: 1 %}
       <li class="conf-date-item">
         <div class="conf-date-item__date">
-          <span class="conf-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }}</span>
+          <span class="conf-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }} · {{ event.date | date: "%-H" }}h</span>
           <span class="conf-date-item__year">{{ event.date | date: "%Y" }}</span>
         </div>
         <div class="conf-date-item__venue">
@@ -39,7 +39,7 @@
       {% assign mois_index = event.date | date: "%-m" | minus: 1 %}
       <li class="conf-date-item conf-date-item--past">
         <div class="conf-date-item__date">
-          <span class="conf-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }}</span>
+          <span class="conf-date-item__day">{{ event.date | date: "%-d" }} {{ mois_fr[mois_index] }} · {{ event.date | date: "%-H" }}h</span>
           <span class="conf-date-item__year">{{ event.date | date: "%Y" }}</span>
         </div>
         <div class="conf-date-item__venue">
