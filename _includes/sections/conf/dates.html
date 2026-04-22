@@ -5,7 +5,7 @@
     <p class="conf-label">Prochaines dates</p>
 
     {% assign conf_events = site.posts | where: "propale", "conf" %}
-    {% assign future_events = conf_events | where_exp: "e", "e.date >= site.time" | sort: "date" %}
+    {% assign future_events = conf_events | where_exp: "e", "e.date >= site.time" | sort: "date" | reverse %}
     {% assign past_events = conf_events | where_exp: "e", "e.date < site.time" | sort: "date" | reverse %}
 
     {% if future_events.size > 0 %}
