@@ -1,4 +1,4 @@
-{% assign conf   = site.data.propositions["conf"] %}
+{% assign conf = site.data.propositions["conf"] %}
 {% assign kismar = site.data.propositions["piano-kismar"] %}
 {% assign olympia = site.data.propositions["olympia"] %}
 
@@ -9,13 +9,13 @@
 
   <div class="home-band">
     <div class="home-band__photo">
-      <img src="/assets/{{ conf.image }}" alt="{{ conf.full_title }}">
+      <img src="/assets/{{ olympia.image }}" alt="{{ olympia.title }}">
     </div>
     <div class="home-band__text">
-      <p class="home-band__label">{{ conf.format_label }}</p>
-      <h3 class="home-band__title">{{ conf.full_title }}</h3>
-      <p class="home-band__pitch">{{ conf.pitch | strip }}</p>
-      <a class="home-band__link" href="{{ conf.url }}">En savoir plus →</a>
+      <p class="home-band__label">Un spectacle musical improvisé</p>
+      <h3 class="home-band__title">{{ olympia.title }}</h3>
+      <p class="home-band__pitch">{{ olympia.description | strip | truncatewords: 30 }}</p>
+      <a class="home-band__link" href="{{ olympia.url }}">En savoir plus →</a>
     </div>
   </div>
 
@@ -33,14 +33,15 @@
 
   <div class="home-band">
     <div class="home-band__photo">
-      <img src="/assets/{{ olympia.image }}" alt="{{ olympia.title }}">
+      <img src="/assets/{{ conf.image }}" alt="{{ conf.full_title }}">
     </div>
     <div class="home-band__text">
-      <p class="home-band__label">Un spectacle musical improvisé</p>
-      <h3 class="home-band__title">{{ olympia.title }}</h3>
-      <p class="home-band__pitch">{{ olympia.description | strip | truncatewords: 30 }}</p>
-      <a class="home-band__link" href="{{ olympia.url }}">En savoir plus →</a>
+      <p class="home-band__label">{{ conf.format_label }}</p>
+      <h3 class="home-band__title">{{ conf.full_title }}</h3>
+      <p class="home-band__pitch">{{ conf.pitch | strip }}</p>
+      <a class="home-band__link" href="{{ conf.url }}">En savoir plus →</a>
     </div>
   </div>
+
 
 </section>
