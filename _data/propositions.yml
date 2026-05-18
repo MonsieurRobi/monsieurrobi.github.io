@@ -222,8 +222,8 @@ conf:
   # Médias
   media:
     video_url: null
-    photos: []
-    photos_caption: "Photos et captation à La Maison Perchée, mai 2026."
+    photos: ["robi-triste.jpg", "robi-up.jpg", "robi-guitare.jpg" ]
+    photos_caption: "Photos à Lucey (Tifen Ducharne), 16 mai 2026."
 
   # Design tokens
   design:
