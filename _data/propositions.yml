@@ -148,9 +148,10 @@ conf:
 
   # Pitch
   pitch: >
-    Christophe Robillard a été diagnostiqué bipolaire à 20 ans. Trente ans plus tard,
-    il en a fait une conférence — une guitare à la main, un paperboard à côté, et
-    deux ou trois choses à dire sur ce qu'il bricole pour s'en débrouiller.
+    Christophe Robillard a été diagnostiqué bipolaire à 20 ans. Trente ans 
+    plus tard, il en a fait une conférence — une guitare à la main, un paperboard 
+    à côté, et deux ou trois choses à dire sur ce qu'il bricole pour agir 
+    plutôt que subir.
   pitch_highlight: "deux ou trois choses à dire"
 
   # Section "De quoi ça parle"
