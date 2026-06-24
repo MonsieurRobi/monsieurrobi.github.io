@@ -1,0 +1,45 @@
+<section class="ecole-section ecole-hosting" id="accueillir">
+  <div class="ecole-inner">
+    <p class="ecole-label">Pour les enseignants et les directions</p>
+    <h2 class="ecole-heading">Organiser une intervention dans votre école</h2>
+
+    <div class="ecole-practical">
+      <table class="ecole-practical__table">
+        <tr>
+          <th>Durée</th>
+          <td>{{ propale.practical.duration }}</td>
+        </tr>
+        <tr>
+          <th>Niveaux</th>
+          <td>{{ propale.practical.levels }}</td>
+        </tr>
+        <tr>
+          <th>Groupe</th>
+          <td>{{ propale.practical.group }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="ecole-subheading">Combien ça coûte ?</h3>
+    <p>{{ propale.pricing.intro }}</p>
+
+    <div class="ecole-pricing">
+      {% for case in propale.pricing.cases %}
+      <div class="ecole-pricing-case ecole-pricing-case--{{ case.kind }}">
+        <strong>{{ case.label }}</strong>
+        <p>{{ case.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="ecole-pricing__conclusion"><em>{{ propale.pricing.conclusion }}</em></p>
+
+    <div class="ecole-contact">
+      <p>{{ propale.contact.pitch }}</p>
+      <a href="mailto:{{ site.email }}?subject={{ propale.contact.email_subject | url_encode }}"
+         class="ecole-btn ecole-btn--primary">
+        Écrire à {{ site.email }}
+      </a>
+    </div>
+  </div>
+</section>

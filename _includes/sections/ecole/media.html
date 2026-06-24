@@ -1,0 +1,16 @@
+<section class="ecole-section ecole-media" id="disque">
+  <div class="ecole-inner">
+    <p class="ecole-label">{{ propale.media.heading | default: "Ce que ça donne" }}</p>
+
+    {% if propale.media.soundcloud_url %}
+    <div class="ecole-soundcloud">
+      <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay"
+        src="{{ propale.media.soundcloud_url }}" title="{{ propale.media.heading }}"></iframe>
+    </div>
+    {% endif %}
+
+    {% if propale.media.caption %}
+    <p class="ecole-caption">{{ propale.media.caption }}</p>
+    {% endif %}
+  </div>
+</section>

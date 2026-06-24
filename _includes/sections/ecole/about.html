@@ -1,0 +1,10 @@
+<section class="ecole-section ecole-about">
+  <div class="ecole-inner">
+    <div class="ecole-text-block">
+      <p class="ecole-label">Ce qu'on y fait</p>
+      {% for para in propale.about %}
+      <p>{{ para | strip }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -244,6 +244,7 @@ conf:
       sans: "system-ui, -apple-system, 'Helvetica Neue', sans-serif"
 
 ecole:
+  # Champs existants (utilisés par post.html, index.html, header.html, feed.xml)
   title: "Interventions"
   url: "/ecole"
   image: "sombrero-paul-bert.jpg"
@@ -251,3 +252,74 @@ ecole:
     Monsieur Robi intervient régulièrement en milieu scolaire. Il propose principalement :
       - des ateliers d'initiation au chant et à la pratique musicale
       - des ateliers où les élèves créent avec lui des chansons
+
+  # Identité
+  full_title: "Des interventions musicales à l'école"
+  format_label: "Une intervention en milieu scolaire"
+  highlight_word: "musicales"
+
+  # Pitch
+  pitch: >
+    Depuis plusieurs années, Monsieur Robi intervient dans les écoles pour
+    faire vivre la musique aux élèves — on chante, on tape des rythmes, on
+    improvise, et on apprend à en parler ensuite, pas avant.
+  pitch_highlight: "on apprend à en parler ensuite, pas avant"
+
+  # Section "Ce qu'on y fait"
+  about:
+    - >
+      Deux formats principaux : des ateliers d'initiation au chant et à la
+      pratique musicale, où l'on explore la voix, le rythme, l'écoute et le
+      jeu collectif sans prérequis ; et des ateliers de création de chansons,
+      où les élèves inventent avec Monsieur Robi des paroles et des mélodies, et
+      repartent avec une chanson qui leur appartient vraiment.
+    - >
+      Jusqu'ici, Monsieur Robi n'a jamais fait de séance isolée : il accompagne la classe
+      tout au long de l'année scolaire, à
+      travers un cycle d'ateliers réguliers
+
+  # Conditions pratiques
+  practical:
+    duration: "Ateliers d'1h, répartis sur l'année scolaire"
+    levels: "Du CP au CM2"
+    group: "À définir ensemble selon vos contraintes (demi-classe, classe entière...)"
+
+  # Tarification
+  pricing:
+    intro: "Le tarif dépend de ce que votre établissement peut mobiliser :"
+    cases:
+      - kind: "budget"
+        label: "Écoles avec un budget dédié"
+        text: "Tarif sur devis, à discuter selon le nombre d'ateliers et le format du projet."
+      - kind: "no-budget"
+        label: "Écoles sans budget"
+        text: "On en discute. Un échange en nature est tout à fait possible — quelques bons petits plats préparés par l'équipe ou les élèves, par exemple, ça me va très bien !"
+    conclusion: "Dans tous les cas : écrivez-moi, on trouvera une formule qui marche pour vous."
+
+  # Contact
+  contact:
+    pitch: "Écrivez-moi en quelques lignes : où, quel niveau, et ce que vous imaginez. Je vous réponds toujours."
+    email_subject: "Intervention en milieu scolaire"
+
+  # Médias
+  media:
+    heading: "Le disque \"Allons au Zoo\""
+    soundcloud_url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/6786366&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    caption: "Ce disque est le fruit d'un an de travail avec une classe — un aperçu concret de ce que peut donner un cycle d'ateliers de création de chansons mené jusqu'au bout."
+
+  # Design tokens
+  design:
+    colors:
+      bg_primary: "#EFF3EC"
+      bg_card: "#FFFFFF"
+      bg_emphasis: "#1F3A2E"
+      text_primary: "#1C2B22"
+      text_secondary: "#33473B"
+      text_muted: "#6B7B6E"
+      accent_strong: "#2F6B4F"
+      accent_soft: "#6FA382"
+      highlight: "#E4F2D9"
+      border_soft: "#D6E0D2"
+    fonts:
+      serif: "'Crimson Pro', Georgia, 'Iowan Old Style', serif"
+      sans: "system-ui, -apple-system, 'Helvetica Neue', sans-serif"
