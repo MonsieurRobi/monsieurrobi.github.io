@@ -2,7 +2,7 @@
 layout: proposition-conf
 propale: conf
 title: "Tout le monde n'a pas la chance d'être bipolaire"
-venue: Zibou Lab
+venue: Zibou Lab (reporté)
 city: Lyon
 address: "71 rue Smith"
 price: Gratuit
