@@ -6,7 +6,7 @@ venue: Le caveau
 city: Fegersheim
 address: "27 rue de Lyon"
 price: Gratuit
-date: 2026-10-29 20:00
-hour: 20h
+date: 2026-10-29 18:30
+hour: 18h30
 ---
 
