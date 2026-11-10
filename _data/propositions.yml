@@ -138,7 +138,7 @@ conf:
   description: >
     Christophe Robillard, diagnostiqué bipolaire à l'âge de 20 ans, nous raconte
     le cadre de vie qu'il s'est bricolé, les outils qu'il s'est façonné pour se
-    débrouiller mieux avec la vie. Mettre de la lumière sur son handicap invisible,
+    débrouiller mieux avec la vie. Rendre visible son handicap invisible,
     c'est aussi une façon d'augmenter son pouvoir d'agir.
 
   # Identité de la proposition
@@ -149,20 +149,20 @@ conf:
   # Pitch
   pitch: >
     Christophe Robillard a été diagnostiqué bipolaire à 20 ans. Trente ans 
-    plus tard, il en a fait une conférence — une guitare à la main, un paperboard 
-    à côté, et deux ou trois choses à dire sur ce qu'il bricole pour agir 
+    plus tard, il en a fait une conférence — une guitare à la main, un ou deux dessins à côté, 
+    et deux ou trois choses à dire sur ce qu'il bricole pour agir 
     plutôt que subir.
   pitch_highlight: "deux ou trois choses à dire"
 
   # Section "De quoi ça parle"
   about:
     - >
-      En s'appuyant sur son vécu et en convoquant des psy, des philosophes, des juristes,
+      En s'appuyant sur son vécu et en convoquant des psy et des philosophes,
       Monsieur Robi raconte le cadre de vie qu'il
       s'est bricolé, les outils qu'il s'est façonnés pour se débrouiller mieux
       avec la vie.
     - >
-      Mettre de la lumière sur son handicap invisible, c'est aussi une façon
+      Rendre visible son handicap invisible, c'est aussi une façon
       d'augmenter son pouvoir d'agir.
     - >
       Une heure et demie de conférence gesticulée, ponctuée de chansons, suivie d'un temps
